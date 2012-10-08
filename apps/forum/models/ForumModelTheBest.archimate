@@ -33,7 +33,7 @@
     <element xsi:type="archimate:Stakeholder" id="ed1bffe7" name="Менеджер проекта"/>
     <element xsi:type="archimate:Stakeholder" id="ee027688" name="Тестировщик"/>
     <element xsi:type="archimate:Stakeholder" id="df9b67e0" name="Отладчик"/>
-    <element xsi:type="archimate:Stakeholder" id="3e5c9a14" name="Модулятор"/>
+    <element xsi:type="archimate:Stakeholder" id="3e5c9a14" name="Архитектор"/>
     <element xsi:type="archimate:Stakeholder" id="2c9a8b64" name="Наладчик"/>
     <element xsi:type="archimate:Stakeholder" id="4d888862" name="Программист"/>
     <element xsi:type="archimate:Stakeholder" id="c4639308" name="Бухгалтер"/>
@@ -50,6 +50,12 @@
     <element xsi:type="archimate:Stakeholder" id="87cb4bed" name="Заведующий кафедрой"/>
     <element xsi:type="archimate:Stakeholder" id="eef46e0f" name="Куратор"/>
     <element xsi:type="archimate:Stakeholder" id="b44a0adc" name="Декан"/>
+    <element xsi:type="archimate:Stakeholder" id="9d60d15d" name="Модератор"/>
+    <element xsi:type="archimate:Stakeholder" id="d38aec85" name="Разработчик"/>
+    <element xsi:type="archimate:Stakeholder" id="f272655d" name="Администратор"/>
+    <element xsi:type="archimate:Stakeholder" id="63dfdab5" name="Продавец"/>
+    <element xsi:type="archimate:Stakeholder" id="92df30ca" name="Общество"/>
+    <element xsi:type="archimate:Stakeholder" id="fbba2303" name="Специалисты"/>
   </folder>
   <folder name="Реализация и переход к новой архитектуре" id="fae52ac4" type="implementation_migration"/>
   <folder name="Связи" id="2c1747bf" type="connectors"/>
@@ -133,7 +139,7 @@
       <child xsi:type="archimate:Group" id="92b6f101" name="Группа">
         <bounds x="85" y="47" width="912" height="758"/>
         <child xsi:type="archimate:Group" id="1104d11c" name="Группа">
-          <bounds x="156" y="90" width="685" height="553"/>
+          <bounds x="175" y="102" width="685" height="553"/>
           <child xsi:type="archimate:Group" id="73828cae" name="Группа">
             <bounds x="180" y="126" width="493" height="313"/>
             <child xsi:type="archimate:DiagramObject" id="15a097ed" textAlignment="2" archimateElement="7b0532ca">
@@ -154,14 +160,14 @@
             <child xsi:type="archimate:DiagramObject" id="d052995e" textAlignment="2" archimateElement="df9b67e0">
               <bounds x="60" y="222"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="9c8524d2" textAlignment="2" archimateElement="3e5c9a14">
-              <bounds x="360" y="54"/>
-            </child>
-            <child xsi:type="archimate:DiagramObject" id="478b4035" textAlignment="2" archimateElement="2c9a8b64">
-              <bounds x="360" y="138"/>
-            </child>
             <child xsi:type="archimate:DiagramObject" id="d4c66780" textAlignment="2" archimateElement="4d888862">
               <bounds x="360" y="222"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="f3809230" textAlignment="2" archimateElement="9d60d15d">
+              <bounds x="360" y="138"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="165e65db" textAlignment="2" archimateElement="f272655d">
+              <bounds x="360" y="54"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="075ec080" textAlignment="2" archimateElement="ed1bffe7">
@@ -175,6 +181,12 @@
           </child>
           <child xsi:type="archimate:DiagramObject" id="00ea476e" textAlignment="2" archimateElement="87cb4bed">
             <bounds x="33" y="147"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="9c8524d2" textAlignment="2" archimateElement="3e5c9a14">
+            <bounds x="432" y="18"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="2bbcac07" textAlignment="2" archimateElement="fbba2303">
+            <bounds x="108" y="29"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="fc91f5c5" textAlignment="2" archimateElement="f297cbb4">
@@ -209,6 +221,15 @@
         </child>
         <child xsi:type="archimate:DiagramObject" id="119e3ccc" textAlignment="2" archimateElement="b44a0adc">
           <bounds x="24" y="150"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="cc943311" textAlignment="2" archimateElement="d38aec85">
+          <bounds x="601" y="33"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9ece8256" textAlignment="2" archimateElement="63dfdab5">
+          <bounds x="780" y="663"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="39d3d8bd" textAlignment="2" archimateElement="92df30ca">
+          <bounds x="99" y="26"/>
         </child>
       </child>
     </element>
