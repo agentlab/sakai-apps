@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.bolton.ac.uk/archimate" name="ToDo Model" id="c083c0fb" version="2.2.1">
+  <folder name="Деятельность" id="ac65ef6a" type="business"/>
+  <folder name="Обработка данных" id="fe27d252" type="application"/>
+  <folder name="Оборудование" id="d3a95c37" type="technology"/>
+  <folder name="Целеполагание" id="8f5c2f19" type="motivation">
+    <element xsi:type="archimate:Stakeholder" id="6d6ab62b" name="Студент"/>
+    <element xsi:type="archimate:Goal" id="9ef7921f" name="Цель"/>
+    <element xsi:type="archimate:Goal" id="79b866a4" name="Цель"/>
+    <element xsi:type="archimate:Stakeholder" id="e023da40" name="Преподаватель"/>
+    <element xsi:type="archimate:Stakeholder" id="fec5ecd1" name="Разработчик"/>
+  </folder>
+  <folder name="Реализация и переход к новой архитектуре" id="6394069a" type="implementation_migration"/>
+  <folder name="Связи" id="52f39c3b" type="connectors"/>
+  <folder name="Отношения" id="f2b61c5e" type="relations"/>
+  <folder name="Группы описаний" id="fa5220f8" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" id="7d1f9b80" name="Заинтересованные лица и цели">
+      <child xsi:type="archimate:DiagramObject" id="9b617d73" textAlignment="2" archimateElement="6d6ab62b">
+        <bounds x="180" y="348"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="18c1d38f" textAlignment="2" archimateElement="9ef7921f">
+        <bounds x="299" y="96"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="ff4e01db" textAlignment="2" archimateElement="79b866a4">
+        <bounds x="564" y="144"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c2c92a4e" textAlignment="2" archimateElement="e023da40">
+        <bounds x="410" y="348"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="45c20941" textAlignment="2" archimateElement="fec5ecd1">
+        <bounds x="636" y="348"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
