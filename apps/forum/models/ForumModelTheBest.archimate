@@ -29,7 +29,6 @@
     <element xsi:type="archimate:Stakeholder" id="c1398bfd" name="Кодировщик"/>
     <element xsi:type="archimate:Stakeholder" id="f5794ab2" name="Дизайнер"/>
     <element xsi:type="archimate:Stakeholder" id="20367906" name="Кодировщик-консультант"/>
-    <element xsi:type="archimate:Assessment" id="5670cd5f" name="Тимлид"/>
     <element xsi:type="archimate:Stakeholder" id="ed1bffe7" name="Менеджер проекта"/>
     <element xsi:type="archimate:Stakeholder" id="ee027688" name="Тестер"/>
     <element xsi:type="archimate:Stakeholder" id="df9b67e0" name="Отладчик"/>
@@ -82,6 +81,14 @@
     <element xsi:type="archimate:Stakeholder" id="13166156" name="Энергетик"/>
     <element xsi:type="archimate:Stakeholder" id="26baa040" name="Врач"/>
     <element xsi:type="archimate:Stakeholder" id="e938879f" name="Системный администратор"/>
+    <element xsi:type="archimate:Stakeholder" id="410d7348" name="Инспектор"/>
+    <element xsi:type="archimate:Stakeholder" id="3c0f9898" name="Заместитель декана"/>
+    <element xsi:type="archimate:Stakeholder" id="a5f9b1a4" name="Начальник управления информационной политики"/>
+    <element xsi:type="archimate:Stakeholder" id="c31b3fbd" name="Банкир"/>
+    <element xsi:type="archimate:Stakeholder" id="ea54dae6" name="Родственник"/>
+    <element xsi:type="archimate:Stakeholder" id="b8792d1e" name="Знаток"/>
+    <element xsi:type="archimate:Stakeholder" id="bd60dbaa" name="Сотрудник службы безопасности"/>
+    <element xsi:type="archimate:Stakeholder" id="c3ab0b90" name="Уборщик"/>
   </folder>
   <folder name="Реализация и переход к новой архитектуре" id="fae52ac4" type="implementation_migration"/>
   <folder name="Связи" id="2c1747bf" type="connectors"/>
@@ -163,9 +170,9 @@
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="b20ef40e" name="Onion">
       <child xsi:type="archimate:Group" id="92b6f101" name="Косвенное участие">
-        <bounds x="12" y="-36" width="877" height="685"/>
+        <bounds x="-144" y="-36" width="1033" height="685"/>
         <child xsi:type="archimate:Group" id="1104d11c" name="Активное участие">
-          <bounds x="12" y="78" width="697" height="433"/>
+          <bounds x="12" y="78" width="865" height="433"/>
           <child xsi:type="archimate:Group" id="73828cae" name="Постоянное участие">
             <bounds x="143" y="126" width="409" height="277"/>
             <child xsi:type="archimate:DiagramObject" id="15a097ed" textAlignment="2" archimateElement="7b0532ca">
@@ -259,6 +266,21 @@
           <child xsi:type="archimate:DiagramObject" id="7494b1ed" textAlignment="2" archimateElement="86de65f8">
             <bounds x="579" y="343"/>
           </child>
+          <child xsi:type="archimate:DiagramObject" id="9fa90054" textAlignment="2" archimateElement="410d7348">
+            <bounds x="703" y="14"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="c5919af1" textAlignment="2" archimateElement="3c0f9898">
+            <bounds x="708" y="72"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="df150788" textAlignment="2" archimateElement="a5f9b1a4">
+            <bounds x="698" y="145" width="145" height="90"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="cc6ba1dc" textAlignment="2" archimateElement="c31b3fbd">
+            <bounds x="705" y="253"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="83ee55cb" textAlignment="2" archimateElement="ea54dae6">
+            <bounds x="729" y="330"/>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="fc91f5c5" textAlignment="2" archimateElement="f297cbb4">
           <bounds x="301" y="516"/>
@@ -297,25 +319,25 @@
           <bounds x="168" y="582"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="3191c78a" textAlignment="2" archimateElement="060ba0e7">
-          <bounds x="732" y="450"/>
+          <bounds x="900" y="390"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="c24c536a" textAlignment="2" archimateElement="3f4e7370">
-          <bounds x="732" y="390"/>
+          <bounds x="888" y="330"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="7fe736d9" textAlignment="2" archimateElement="a5f455a7">
-          <bounds x="736" y="325"/>
+          <bounds x="888" y="267"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="caa0b57f" textAlignment="2" archimateElement="798ff64f">
-          <bounds x="732" y="78"/>
+          <bounds x="840" y="6"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="5afe0773" textAlignment="2" archimateElement="f56b68f7">
-          <bounds x="732" y="138"/>
+          <bounds x="888" y="72"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="ec014466" textAlignment="2" archimateElement="a0a18b24">
-          <bounds x="732" y="198"/>
+          <bounds x="888" y="138"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="3f65d5df" textAlignment="2" archimateElement="8ae21543">
-          <bounds x="732" y="258"/>
+          <bounds x="888" y="198"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="7555553e" textAlignment="2" archimateElement="f796f9a6">
           <bounds x="443" y="519"/>
@@ -334,6 +356,15 @@
         </child>
         <child xsi:type="archimate:DiagramObject" id="715a3ef5" textAlignment="2" archimateElement="e938879f">
           <bounds x="733" y="589"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="5e4378f3" textAlignment="2" archimateElement="b8792d1e">
+          <bounds x="888" y="456"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="44b4522a" textAlignment="2" archimateElement="bd60dbaa">
+          <bounds x="888" y="516"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="dc0fd368" textAlignment="2" archimateElement="c3ab0b90">
+          <bounds x="894" y="586"/>
         </child>
       </child>
     </element>
