@@ -91,6 +91,12 @@
     <element xsi:type="archimate:Stakeholder" id="c3ab0b90" name="Уборщик"/>
     <element xsi:type="archimate:Stakeholder" id="4e4852bf" name="Диктор"/>
     <element xsi:type="archimate:Stakeholder" id="9d35f958" name="Заведующий ТСО"/>
+    <element xsi:type="archimate:Stakeholder" id="29c42c93" name="Философ"/>
+    <element xsi:type="archimate:Stakeholder" id="40876d0a" name="Экономист"/>
+    <element xsi:type="archimate:Stakeholder" id="ae494c66" name="Эколог"/>
+    <element xsi:type="archimate:Stakeholder" id="7810cbdc" name="Информатик"/>
+    <element xsi:type="archimate:Stakeholder" id="0bca511f" name="Социолог"/>
+    <element xsi:type="archimate:Stakeholder" id="067301b9" name="Историк"/>
   </folder>
   <folder name="Реализация и переход к новой архитектуре" id="fae52ac4" type="implementation_migration"/>
   <folder name="Связи" id="2c1747bf" type="connectors"/>
@@ -373,6 +379,24 @@
         </child>
         <child xsi:type="archimate:DiagramObject" id="4ecc6571" textAlignment="2" archimateElement="9d35f958">
           <bounds x="1040" y="102"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d719cf89" textAlignment="2" archimateElement="29c42c93">
+          <bounds x="1043" y="177"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="f419ca71" textAlignment="2" archimateElement="40876d0a">
+          <bounds x="1040" y="246"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="831641db" textAlignment="2" archimateElement="ae494c66">
+          <bounds x="1043" y="321" width="120" height="57"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="c02de5b8" textAlignment="2" archimateElement="7810cbdc">
+          <bounds x="1045" y="392"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="03919dad" textAlignment="2" archimateElement="0bca511f">
+          <bounds x="1041" y="462"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="df593786" textAlignment="2" archimateElement="067301b9">
+          <bounds x="1045" y="538"/>
         </child>
       </child>
     </element>
