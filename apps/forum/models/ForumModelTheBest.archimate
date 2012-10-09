@@ -69,6 +69,8 @@
     <element xsi:type="archimate:Stakeholder" id="060ba0e7" name="Ученый"/>
     <element xsi:type="archimate:Stakeholder" id="3f4e7370" name="Политик"/>
     <element xsi:type="archimate:Stakeholder" id="a5f455a7" name="Повар"/>
+    <element xsi:type="archimate:Stakeholder" id="7b0d54bf" name="Бухгалтер"/>
+    <element xsi:type="archimate:Stakeholder" id="44a28718" name="Юрист"/>
   </folder>
   <folder name="Реализация и переход к новой архитектуре" id="fae52ac4" type="implementation_migration"/>
   <folder name="Связи" id="2c1747bf" type="connectors"/>
@@ -156,7 +158,7 @@
           <child xsi:type="archimate:Group" id="73828cae" name="Постоянное участие">
             <bounds x="143" y="126" width="409" height="277"/>
             <child xsi:type="archimate:DiagramObject" id="15a097ed" textAlignment="2" archimateElement="7b0532ca">
-              <bounds x="144" y="138"/>
+              <bounds x="144" y="126"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="6ccee834" textAlignment="2" archimateElement="c1398bfd">
               <bounds x="12" y="6"/>
@@ -181,6 +183,12 @@
             </child>
             <child xsi:type="archimate:DiagramObject" id="5be73a95" textAlignment="2" archimateElement="6e2d0623">
               <bounds x="12" y="198"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="3e63f084" textAlignment="2" archimateElement="7b0d54bf">
+              <bounds x="281" y="135"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="3f38b6a8" textAlignment="2" archimateElement="44a28718">
+              <bounds x="276" y="198"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="9c9beae3" textAlignment="2" archimateElement="10a30919">
