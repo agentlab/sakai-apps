@@ -53,7 +53,7 @@
     <element xsi:type="archimate:Stakeholder" id="d38aec85" name="Разработчик"/>
     <element xsi:type="archimate:Stakeholder" id="f272655d" name="Администратор"/>
     <element xsi:type="archimate:Stakeholder" id="63dfdab5" name="Продавец"/>
-    <element xsi:type="archimate:Stakeholder" id="92df30ca" name="Общество"/>
+    <element xsi:type="archimate:Stakeholder" id="92df30ca" name="Общественный деятель"/>
     <element xsi:type="archimate:Stakeholder" id="fbba2303" name="Специалисты"/>
     <element xsi:type="archimate:Stakeholder" id="f64a2747" name="Отладчик-консультант"/>
     <element xsi:type="archimate:Stakeholder" id="47fb6cb0" name="Юрист"/>
@@ -179,7 +179,7 @@
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="b20ef40e" name="Onion">
       <child xsi:type="archimate:Group" id="92b6f101" name="Окружающая среда">
-        <bounds x="-144" y="-36" width="1345" height="685"/>
+        <bounds x="-180" y="-24" width="1345" height="685"/>
         <child xsi:type="archimate:Group" id="1104d11c" name="Кафедра">
           <bounds x="12" y="78" width="829" height="433"/>
           <child xsi:type="archimate:Group" id="73828cae" name="Система">
@@ -211,6 +211,15 @@
             <child xsi:type="archimate:DiagramObject" id="165e65db" textAlignment="2" archimateElement="f272655d">
               <bounds x="144" y="186"/>
             </child>
+            <child xsi:type="archimate:DiagramObject" id="af3e7333" textAlignment="2" archimateElement="eefe7e84">
+              <bounds x="276" y="72"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="8f388fa8" textAlignment="2" archimateElement="cf0c59ec">
+              <bounds x="276" y="138"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="715a3ef5" textAlignment="2" archimateElement="e938879f">
+              <bounds x="276" y="198"/>
+            </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="9c9beae3" textAlignment="2" archimateElement="10a30919">
             <bounds x="565" y="138"/>
@@ -227,12 +236,6 @@
           <child xsi:type="archimate:DiagramObject" id="2830d78d" textAlignment="2" archimateElement="f64a2747">
             <bounds x="143" y="66"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="af3e7333" textAlignment="2" archimateElement="eefe7e84">
-            <bounds x="12" y="72"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="8f388fa8" textAlignment="2" archimateElement="cf0c59ec">
-            <bounds x="12" y="138"/>
-          </child>
           <child xsi:type="archimate:DiagramObject" id="197d40fd" textAlignment="2" archimateElement="eef46e0f">
             <bounds x="408" y="6"/>
           </child>
@@ -240,7 +243,7 @@
             <bounds x="540" y="72"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="efdf4278" textAlignment="2" archimateElement="6ce98771">
-            <bounds x="565" y="204"/>
+            <bounds x="12" y="138"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="00ea476e" textAlignment="2" archimateElement="87cb4bed">
             <bounds x="12" y="330"/>
@@ -261,16 +264,13 @@
             <bounds x="143" y="6"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="fc91f5c5" textAlignment="2" archimateElement="f297cbb4">
-            <bounds x="565" y="270"/>
+            <bounds x="12" y="72"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="caa0b57f" textAlignment="2" archimateElement="798ff64f">
             <bounds x="672" y="6"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="5afe0773" textAlignment="2" archimateElement="f56b68f7">
             <bounds x="672" y="66"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="715a3ef5" textAlignment="2" archimateElement="e938879f">
-            <bounds x="565" y="348"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="3fe3b942" textAlignment="2" archimateElement="adcdd674">
