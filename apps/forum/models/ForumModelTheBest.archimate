@@ -66,6 +66,9 @@
     <element xsi:type="archimate:Stakeholder" id="6e2d0623" name="Интегратор"/>
     <element xsi:type="archimate:Stakeholder" id="0a3b9e78" name="Психолог"/>
     <element xsi:type="archimate:Stakeholder" id="86de65f8" name="Менеджер по рекламе"/>
+    <element xsi:type="archimate:Stakeholder" id="060ba0e7" name="Ученый"/>
+    <element xsi:type="archimate:Stakeholder" id="3f4e7370" name="Политик"/>
+    <element xsi:type="archimate:Stakeholder" id="a5f455a7" name="Повар"/>
   </folder>
   <folder name="Реализация и переход к новой архитектуре" id="fae52ac4" type="implementation_migration"/>
   <folder name="Связи" id="2c1747bf" type="connectors"/>
@@ -270,6 +273,15 @@
         </child>
         <child xsi:type="archimate:DiagramObject" id="06174c90" textAlignment="2" archimateElement="ca0641e2">
           <bounds x="468" y="546"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3191c78a" textAlignment="2" archimateElement="060ba0e7">
+          <bounds x="732" y="462"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="c24c536a" textAlignment="2" archimateElement="3f4e7370">
+          <bounds x="732" y="390"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="7fe736d9" textAlignment="2" archimateElement="a5f455a7">
+          <bounds x="736" y="325"/>
         </child>
       </child>
     </element>
