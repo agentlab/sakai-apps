@@ -381,9 +381,6 @@
             <child xsi:type="archimate:DiagramObject" id="075ec080" textAlignment="2" archimateElement="ed1bffe7">
               <bounds x="12" y="126"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="5be73a95" textAlignment="2" archimateElement="6e2d0623">
-              <bounds x="12" y="198"/>
-            </child>
             <child xsi:type="archimate:DiagramObject" id="f3809230" textAlignment="2" archimateElement="9d60d15d">
               <bounds x="276" y="12"/>
             </child>
