@@ -7,7 +7,9 @@
     <element xsi:type="archimate:BusinessActor" id="a8ecefa3" name="Модератор"/>
     <element xsi:type="archimate:BusinessActor" id="09800d14" name="Специалист"/>
     <element xsi:type="archimate:BusinessActor" id="119382cf" name="Администратор"/>
-    <element xsi:type="archimate:Product" id="7b0532ca" name="Forum"/>
+    <element xsi:type="archimate:Product" id="7b0532ca" name="Forum">
+      <documentation>Продукт.</documentation>
+    </element>
     <element xsi:type="archimate:BusinessActor" id="1ffee4f1" name="Иванов Алексей Михайлович"/>
     <element xsi:type="archimate:BusinessActor" id="4dc978b4" name="Девятков ВВ"/>
     <element xsi:type="archimate:BusinessActor" id="c52c064b" name="Лычков ИИ"/>
@@ -32,7 +34,10 @@
     <element xsi:type="archimate:Goal" id="bb9e86ed" name="Проконтроллировать работу пользователей"/>
     <element xsi:type="archimate:Goal" id="8934877a" name="Отразить мнение специалиста"/>
     <element xsi:type="archimate:Stakeholder" id="c1398bfd" name="Кодировщик"/>
-    <element xsi:type="archimate:Stakeholder" id="f5794ab2" name="Дизайнер"/>
+    <element xsi:type="archimate:Stakeholder" id="f5794ab2" name="Дизайнер">
+      <documentation>Графический дизайнер. Обеспечивает необходимую часть форума. Заинтересован в форуме для портфолио.&#xD;
+</documentation>
+    </element>
     <element xsi:type="archimate:Stakeholder" id="20367906" name="Кодировщик-консультант"/>
     <element xsi:type="archimate:Stakeholder" id="ed1bffe7" name="Менеджер проекта"/>
     <element xsi:type="archimate:Stakeholder" id="ee027688" name="Тестер">
