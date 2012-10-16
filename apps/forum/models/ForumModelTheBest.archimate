@@ -302,7 +302,7 @@
           <bounds x="48" y="246"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="9344222e" textAlignment="2" archimateElement="ede2ee3d">
-          <bounds x="336" y="246"/>
+          <bounds x="420" y="246"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="1a2818b3" textAlignment="2" archimateElement="e08f3fdf">
           <bounds x="192" y="246"/>
