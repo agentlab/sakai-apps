@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.bolton.ac.uk/archimate" name="Attendance Model" id="c083c0fb" version="2.2.1">
   <folder name="Деятельность" id="ac65ef6a" type="business">
-    <element xsi:type="archimate:Product" id="80102b66" name="Attendance Control System">
+    <element xsi:type="archimate:Product" id="80102b66" name="Attendance system">
       <documentation>Продукт.</documentation>
     </element>
     <element xsi:type="archimate:Product" id="3c1e1222" name="Forum (copy)">
@@ -363,7 +363,7 @@
           <child xsi:type="archimate:Group" id="aa2ed655" name="Система">
             <bounds x="11" y="18" width="470" height="217"/>
             <child xsi:type="archimate:DiagramObject" id="b350c152" textAlignment="2" archimateElement="80102b66">
-              <bounds x="312" y="18" width="120" height="73"/>
+              <bounds x="312" y="78"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="964110ed" textAlignment="2" archimateElement="5d32476f">
               <bounds x="24" y="78" width="138" height="55"/>
