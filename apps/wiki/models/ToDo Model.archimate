@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.bolton.ac.uk/archimate" name="ToDo Model" id="c083c0fb" version="2.2.1">
-  <folder name="Деятельность" id="ac65ef6a" type="business"/>
+  <folder name="Деятельность" id="ac65ef6a" type="business">
+    <element xsi:type="archimate:Product" id="8a7336b9" name="wiki">
+      <documentation>Продукт.</documentation>
+    </element>
+  </folder>
   <folder name="Обработка данных" id="fe27d252" type="application"/>
   <folder name="Оборудование" id="d3a95c37" type="technology"/>
   <folder name="Целеполагание" id="8f5c2f19" type="motivation">
@@ -9,6 +13,28 @@
     <element xsi:type="archimate:Goal" id="79b866a4" name="Цель"/>
     <element xsi:type="archimate:Stakeholder" id="e023da40" name="Преподаватель"/>
     <element xsi:type="archimate:Stakeholder" id="fec5ecd1" name="Разработчик"/>
+    <element xsi:type="archimate:Stakeholder" id="4253349b" name="Преподаватель"/>
+    <element xsi:type="archimate:Stakeholder" id="f493dff3" name="Студент"/>
+    <element xsi:type="archimate:Stakeholder" id="f8c3397f" name="Эксперт в предметной области"/>
+    <element xsi:type="archimate:Stakeholder" id="ca9ee540" name="Сторонний пользователь"/>
+    <element xsi:type="archimate:Stakeholder" id="22e942e0" name="Администратор/модератор контента"/>
+    <element xsi:type="archimate:Stakeholder" id="d0d1b745" name="Тестировщик ">
+      <documentation>Студент-практик. Знаток экстремального програмирования. Особо усидчив. Смотрит на функции свысока, хочет изменить мир и форум, чтобы студенты перестали жаловаться на его глюки.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="7aebcf1b" name="Front-end разработчик"/>
+    <element xsi:type="archimate:Stakeholder" id="df30f953" name="Кодер">
+      <documentation>Студент-практик. Знаток экстремального програмирования. Особо усидчив. Смотрит на функции свысока, хочет изменить мир и форум, чтобы студенты перестали жаловаться на его глюки.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="d8256ad6" name="Рекламщик"/>
+    <element xsi:type="archimate:Stakeholder" id="948911b2" name="Владелец информации"/>
+    <element xsi:type="archimate:Stakeholder" id="53a993dc" name="Разработчик архитектуры wiki">
+      <documentation>Студент-практик. Знаток экстремального програмирования. Особо усидчив. Смотрит на функции свысока, хочет изменить мир и форум, чтобы студенты перестали жаловаться на его глюки.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="3191f5e5" name="Менеджер">
+      <documentation>Студент-практик. Знаток экстремального програмирования. Особо усидчив. Смотрит на функции свысока, хочет изменить мир и форум, чтобы студенты перестали жаловаться на его глюки.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="51232577" name="Спамер"/>
+    <element xsi:type="archimate:Stakeholder" id="635f8456" name="Тролль"/>
   </folder>
   <folder name="Реализация и переход к новой архитектуре" id="6394069a" type="implementation_migration"/>
   <folder name="Связи" id="52f39c3b" type="connectors"/>
@@ -29,6 +55,62 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="45c20941" textAlignment="2" archimateElement="fec5ecd1">
         <bounds x="636" y="348"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" id="e33262a7" name="Заинтересованные лица и системы">
+      <child xsi:type="archimate:Group" id="250b6db2" name="Окружающая среда">
+        <bounds x="84" y="12" width="877" height="421"/>
+        <child xsi:type="archimate:Group" id="5bb4121f" name="Обеспечивающая система">
+          <bounds x="12" y="18" width="697" height="373"/>
+          <child xsi:type="archimate:Group" id="9a2c0bc5" name="Система">
+            <bounds x="11" y="18" width="470" height="217"/>
+            <child xsi:type="archimate:DiagramObject" id="123d250b" textAlignment="2" archimateElement="8a7336b9">
+              <bounds x="312" y="18" width="120" height="73"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="a7a5fc38" textAlignment="2" archimateElement="4253349b">
+              <bounds x="24" y="78" width="138" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="15a8ee07" textAlignment="2" archimateElement="f493dff3">
+              <bounds x="24" y="18" width="138" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="c8502dc5" textAlignment="2" archimateElement="f8c3397f">
+              <bounds x="24" y="138" width="138" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="3a898f95" textAlignment="2" archimateElement="ca9ee540">
+              <bounds x="168" y="78"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="69ee3bf6" textAlignment="2" archimateElement="22e942e0">
+              <bounds x="168" y="18" width="133" height="55"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="43f76e32" textAlignment="2" archimateElement="d0d1b745">
+            <bounds x="504" y="78" width="133" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="93937fa5" textAlignment="2" archimateElement="7aebcf1b">
+            <bounds x="504" y="18" width="133" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="1959a7dd" textAlignment="2" archimateElement="df30f953">
+            <bounds x="504" y="138" width="133" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="da0c2a9b" textAlignment="2" archimateElement="53a993dc">
+            <bounds x="504" y="198" width="133" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="31dc2e80" textAlignment="2" archimateElement="3191f5e5">
+            <bounds x="504" y="258" width="133" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0ea82438" textAlignment="2" archimateElement="d8256ad6">
+          <bounds x="732" y="78"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="827fefaf" textAlignment="2" archimateElement="948911b2">
+          <bounds x="732" y="18"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="a61c6a1f" textAlignment="2" archimateElement="51232577">
+          <bounds x="732" y="138"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="19547a42" textAlignment="2" archimateElement="635f8456">
+          <bounds x="732" y="198"/>
+        </child>
       </child>
     </element>
   </folder>
