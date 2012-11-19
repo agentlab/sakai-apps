@@ -249,6 +249,7 @@
     <element xsi:type="archimate:RealisationRelationship" id="583a5036" source="6d1f1050" target="59c52feb"/>
     <element xsi:type="archimate:RealisationRelationship" id="813f3057" source="6d1f1050" target="d90959bf"/>
     <element xsi:type="archimate:RealisationRelationship" id="aab8b7e2" source="6d1f1050" target="3f5493c9"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="862a0923" source="6d417a28" target="ae141abe"/>
   </folder>
   <folder name="Группы описаний" id="fe64d650" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" id="e158e13a" name="2. Заинтересованные лица и их цели" viewpoint="17">
@@ -632,7 +633,8 @@
         <bounds x="252" y="348"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="fa5b2ce4" textAlignment="2" targetConnections="c7705bfa" archimateElement="6d417a28">
-        <bounds x="-24" y="660"/>
+        <bounds x="-144" y="648"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b366a39d" source="fa5b2ce4" target="ece3c0b3" relationship="862a0923"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="e488ea99" textAlignment="2" archimateElement="e08f3fdf">
         <bounds x="-216" y="456"/>
@@ -679,7 +681,7 @@
         <bounds x="139" y="550" width="120" height="75"/>
         <sourceConnection xsi:type="archimate:Connection" id="95a8ed36" source="e0357b5f" target="eed307ad" relationship="71526df2"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="ece3c0b3" textAlignment="2" targetConnections="0cf9bb18 9e611972 04249370 056dfa5f" archimateElement="ae141abe">
+      <child xsi:type="archimate:DiagramObject" id="ece3c0b3" textAlignment="2" targetConnections="0cf9bb18 9e611972 04249370 056dfa5f b366a39d" archimateElement="ae141abe">
         <bounds x="-33" y="528" width="120" height="91"/>
         <sourceConnection xsi:type="archimate:Connection" id="4e36068a" source="ece3c0b3" target="eed307ad" relationship="3974a47a"/>
       </child>
