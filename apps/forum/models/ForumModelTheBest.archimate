@@ -172,10 +172,10 @@
 &#xD;
 </documentation>
     </element>
-    <element xsi:type="archimate:Requirement" id="4e54c8ed" name="Система оформлена по современным стандартам W3C XHTML, CSS"/>
+    <element xsi:type="archimate:Requirement" id="4e54c8ed" name="Система соответствует well formed по современным стандартам W3C XHTML, CSS"/>
     <element xsi:type="archimate:Requirement" id="3c9fd8f5" name="60% пользователей довольны дизайном системы"/>
     <element xsi:type="archimate:Requirement" id="619c95f7" name="Учтены особенности студентов по усваиванию различных типов информации"/>
-    <element xsi:type="archimate:Requirement" id="82f358ab" name="Система контролепригодна">
+    <element xsi:type="archimate:Requirement" id="82f358ab" name="Система тестируется раз в месяц">
       <documentation>стимул: система дала сбой&#xD;
 источник стимула: система&#xD;
 артефакт: система &#xD;
@@ -677,7 +677,7 @@
         <bounds x="52" y="218" width="120" height="23"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="a2d93906" textAlignment="2" archimateElement="4e54c8ed">
-        <bounds x="32" y="108" width="136" height="95"/>
+        <bounds x="32" y="96" width="136" height="107"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="70d2825b" textAlignment="2" archimateElement="3c9fd8f5">
         <bounds x="187" y="118" width="133" height="85"/>
@@ -686,7 +686,7 @@
         <bounds x="325" y="99" width="154" height="104"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="2bc48977" textAlignment="2" archimateElement="82f358ab">
-        <bounds x="488" y="123" width="150" height="46"/>
+        <bounds x="488" y="108" width="150" height="61"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="c4195abc" textAlignment="2" archimateElement="560f59c4">
         <bounds x="484" y="191" width="157" height="78"/>
