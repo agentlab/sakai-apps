@@ -186,6 +186,14 @@
     <element xsi:type="archimate:Requirement" id="560f59c4" name="Информация защищена информационным правом РФ"/>
     <element xsi:type="archimate:Stakeholder" id="3f12695a" name="Постер"/>
     <element xsi:type="archimate:Goal" id="18600826" name="Сообщение размещено"/>
+    <element xsi:type="archimate:Requirement" id="c79c2a17" name="Создание новой роли пользователя занимает не более 5 часов">
+      <documentation>Стимул - добавление роли пользователя&#xD;
+Источник стимула - администратор&#xD;
+Артефакт - роли пользователей&#xD;
+Реакция - система запрашивает права для новой роли&#xD;
+Мера реакции - создание новой роли занимает не более 5 часов</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" id="bf27630f" name="Формирование начальной страницы системы занимает не более 10 секунд"/>
   </folder>
   <folder name="Реализация и переход к новой архитектуре" id="fae52ac4" type="implementation_migration"/>
   <folder name="Связи" id="2c1747bf" type="connectors"/>
@@ -671,7 +679,7 @@
         <bounds x="181" y="211" width="145" height="41"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="e4692045" textAlignment="2" archimateElement="f08be85f">
-        <bounds x="183" y="264" width="141" height="25"/>
+        <bounds x="331" y="219" width="141" height="25"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="b508dbc3" textAlignment="2" archimateElement="d261945d">
         <bounds x="52" y="218" width="120" height="23"/>
@@ -682,14 +690,11 @@
       <child xsi:type="archimate:DiagramObject" id="70d2825b" textAlignment="2" archimateElement="3c9fd8f5">
         <bounds x="187" y="118" width="133" height="85"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="c0bff0f5" textAlignment="2" archimateElement="619c95f7">
-        <bounds x="325" y="99" width="154" height="104"/>
+      <child xsi:type="archimate:DiagramObject" id="ed90d97b" textAlignment="2" archimateElement="c79c2a17">
+        <bounds x="348" y="108" width="133" height="92"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="2bc48977" textAlignment="2" archimateElement="82f358ab">
-        <bounds x="488" y="108" width="150" height="61"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="c4195abc" textAlignment="2" archimateElement="560f59c4">
-        <bounds x="484" y="191" width="157" height="78"/>
+      <child xsi:type="archimate:DiagramObject" id="2aee2ca3" textAlignment="2" archimateElement="bf27630f">
+        <bounds x="519" y="118" width="154" height="123"/>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="a6141105" name="4. Сценарии">
