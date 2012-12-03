@@ -175,7 +175,14 @@
     <element xsi:type="archimate:Requirement" id="4e54c8ed" name="Система оформлена по современным стандартам W3C XHTML, CSS"/>
     <element xsi:type="archimate:Requirement" id="3c9fd8f5" name="60% пользователей довольны дизайном системы"/>
     <element xsi:type="archimate:Requirement" id="619c95f7" name="Учтены особенности студентов по усваиванию различных типов информации"/>
-    <element xsi:type="archimate:Requirement" id="82f358ab" name="Система контролепригодна"/>
+    <element xsi:type="archimate:Requirement" id="82f358ab" name="Система контролепригодна">
+      <documentation>стимул: система дала сбой&#xD;
+источник стимула: система&#xD;
+артефакт: система &#xD;
+условиее возникновения артефакта&#xD;
+мера реакции артецакт&#xD;
+численная мера реакции армтефакта</documentation>
+    </element>
     <element xsi:type="archimate:Requirement" id="560f59c4" name="Информация защищена информационным правом РФ"/>
     <element xsi:type="archimate:Stakeholder" id="3f12695a" name="Постер"/>
     <element xsi:type="archimate:Goal" id="18600826" name="Сообщение размещено"/>
