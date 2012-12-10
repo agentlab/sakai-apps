@@ -20,7 +20,7 @@
     <element xsi:type="archimate:Stakeholder" id="03a4b6a6" name="Студент"/>
     <element xsi:type="archimate:Stakeholder" id="c6568137" name="Постер (copy)"/>
     <element xsi:type="archimate:Stakeholder" id="78faf0e3" name="Тестировщик ">
-      <documentation>Студент-практик. Знаток экстремального програмирования. Особо усидчив. Смотрит на функции свысока, хочет изменить мир и форум, чтобы студенты перестали жаловаться на его глюки.</documentation>
+      <documentation></documentation>
     </element>
     <element xsi:type="archimate:Stakeholder" id="8307d802" name="Дизайнер (copy)"/>
     <element xsi:type="archimate:Stakeholder" id="94e74b86" name="Разработчик Java"/>
