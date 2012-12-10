@@ -535,7 +535,7 @@
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="3855f650" name="6. Ограничения и показатели качества">
       <child xsi:type="archimate:DiagramObject" id="f8d1464e" textAlignment="2" archimateElement="afbf24f2">
-        <bounds x="80" y="140"/>
+        <bounds x="72" y="140"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="f6040ec0" textAlignment="2" archimateElement="75a4e008">
         <bounds x="236" y="140" width="130" height="55"/>
