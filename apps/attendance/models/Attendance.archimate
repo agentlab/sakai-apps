@@ -116,16 +116,13 @@
     <element xsi:type="archimate:Goal" id="10401b2e" name="Выпуск студентов с высоким качеством знаний"/>
     <element xsi:type="archimate:Goal" id="e77919dd" name="Посещение студентами всех занятий"/>
     <element xsi:type="archimate:Stakeholder" id="4f1a9eb2" name="Государство"/>
-    <element xsi:type="archimate:Goal" id="b78b1208"/>
     <element xsi:type="archimate:Goal" id="cb22aea9" name="Наличие отметок о посещаемости лекций, на которых не присутствовал"/>
     <element xsi:type="archimate:Constraint" id="afbf24f2" name="Испльзование языка Java"/>
-    <element xsi:type="archimate:Requirement" id="f0df2862" name="Требования"/>
     <element xsi:type="archimate:Constraint" id="75a4e008" name="Использование фреймворка Felix"/>
     <element xsi:type="archimate:Constraint" id="b53ef14d" name="Использование OSGI"/>
     <element xsi:type="archimate:Constraint" id="51e69a90" name="Интеграция в систему Sakai"/>
     <element xsi:type="archimate:Goal" id="c4a96bf4" name="Отчисление студентов, неоправданно пропускающих занятия"/>
     <element xsi:type="archimate:Goal" id="38efc338" name="Студенты группы посещают все занятия"/>
-    <element xsi:type="archimate:Goal" id="60411410"/>
     <element xsi:type="archimate:Goal" id="e23403ae" name="Все пропуски занятий задокументированы"/>
   </folder>
   <folder name="Реализация и переход к новой архитектуре" id="6394069a" type="implementation_migration"/>
