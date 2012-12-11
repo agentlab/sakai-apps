@@ -116,7 +116,7 @@
           <bounds x="168" y="18" width="102" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="fade1f2b" textAlignment="2" archimateElement="b1ab6fc2">
-          <bounds x="312" y="18" width="84" height="55"/>
+          <bounds x="360" y="18" width="84" height="55"/>
         </child>
       </child>
     </element>
