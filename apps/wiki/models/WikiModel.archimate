@@ -225,7 +225,9 @@
       <documentation>Автор -- человек, пишущий, редактирующий и добавляющий статьи.
 Авторами статей могут быть преподаватели и студенты.</documentation>
     </element>
-    <element xsi:type="archimate:Goal" id="83a2d4e1" name="Статья быстро и легко добавлена в систему"/>
+    <element xsi:type="archimate:Goal" id="83a2d4e1" name="Статья быстро и легко добавлена в систему">
+      <documentation>Система стабильна и быстро отвечает на запросы. При добавлении статьи в систему не требуется несколько раз переотправлять статью.</documentation>
+    </element>
     <element xsi:type="archimate:Constraint" id="1fa9d86a" name="Использование языка Java"/>
     <element xsi:type="archimate:Assessment" id="bf42bb03" name="1000 пользователей за 1с добавляют 10 страниц с равномерным распределением">
       <documentation>Источник воздействия: пользователь&#xD;
@@ -248,10 +250,18 @@
       <documentation>Читатель -- человек, читающий (просматривающий) wiki.
 Читателями статей могут являться студенты, преподаватели и незарегистрированные пользователи.</documentation>
     </element>
-    <element xsi:type="archimate:Goal" id="0239cd42" name="Статья легко найдена и прочитана, из нее получена необходимая информация"/>
-    <element xsi:type="archimate:Goal" id="0ec37722" name="Нанесение вреда wiki, затруднение использования wiki"/>
-    <element xsi:type="archimate:Goal" id="1d763077" name="В статью внесены необходимые изменения, улучшающие ее"/>
-    <element xsi:type="archimate:Goal" id="cd75cf6b" name="Внесение в статью неверных изменений, ухудшающих ее качество"/>
+    <element xsi:type="archimate:Goal" id="0239cd42" name="Статья легко найдена и прочитана, из нее получена необходимая информация">
+      <documentation>Статья хорошо оформлена и не испорчена спамерами. Содержится только полезная информация, доступ к ней не затруднён.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" id="0ec37722" name="Нанесение вреда wiki, затруднение использования wiki">
+      <documentation>В погоне за прибылью спамер не останавливается перед нанесением вреда wiki и затруднением использования wiki.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" id="1d763077" name="В статью внесены необходимые изменения, улучшающие ее">
+      <documentation>Статья изменена, и изменения отправлены на сервер без проблем и ожиданий.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" id="cd75cf6b" name="Внесение в статью неверных изменений, ухудшающих ее качество">
+      <documentation>В поисках lulz'ов тролль не остановится перед внесением в статью неверных изменений, ухудшающих ее качество.</documentation>
+    </element>
     <element xsi:type="archimate:Goal" id="9299e686" name="Участники системы могут обсуждать информацию, содержащуюся в wiki, и редактировать ее"/>
     <element xsi:type="archimate:Goal" id="1ed379e6" name="Обсуждение заполнено оскорблениями или холиварами"/>
     <element xsi:type="archimate:Goal" id="18ae1ac5" name="Обсуждение заполнено спамом"/>
@@ -1033,6 +1043,7 @@
         <bounds x="805" y="1278"/>
         <sourceConnection xsi:type="archimate:Connection" id="81712c0d" source="31eae5b4" target="01fdfb85" relationship="9ce837db"/>
       </child>
+      <documentation>Данная группа описаний содержит типичные и важные последовательности, содержащие действия, цели, реакцию системы.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="6f2840b6" name="6. Ограничения и показатели качества" viewpoint="22">
       <child xsi:type="archimate:DiagramObject" id="d8546660" textAlignment="2" archimateElement="1fa9d86a">
