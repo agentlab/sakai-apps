@@ -31,9 +31,16 @@
       <documentation>МОДЕРАТОР: просматривает статью в поисках неточностей и ошибок, исправляет их&#xD;
 СИСТЕМА: сохраняет изменения</documentation>
     </element>
-    <element xsi:type="archimate:BusinessRole" id="e5b239dc" name="Студент"/>
-    <element xsi:type="archimate:BusinessRole" id="9a18eea5" name="Преподаватель"/>
-    <element xsi:type="archimate:BusinessRole" id="3aa9aa35" name="Модератор контента"/>
+    <element xsi:type="archimate:BusinessRole" id="e5b239dc" name="Студент">
+      <documentation>Студент может являться автором статьи, читателем, комментатором.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" id="9a18eea5" name="Преподаватель">
+      <documentation>Преподаватель может являться автором статьи, читателем, комментатором.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" id="3aa9aa35" name="Модератор контента">
+      <documentation>Модератор контента должен быть компетентным в своей области.
+Данная роль обладает правами изменения и удаления всего содержания wiki, а также глобальных изменений оформления.</documentation>
+    </element>
     <element xsi:type="archimate:BusinessActor" id="1858f3c4" name="Воображаемый представитель компании O'reilly"/>
     <element xsi:type="archimate:BusinessActor" id="379b62e1" name="Воображаемый представитель компании Apple"/>
     <element xsi:type="archimate:BusinessActor" id="560d2937" name="Воображаемый спамер"/>
@@ -52,8 +59,12 @@
 АВТОР или ЧИТАТЕЛЬ: вводит текст комментария и нажимает кнопку &quot;Send&quot;&#xD;
 СИСТЕМА: сохраняет комментарий, открывает страницу комментариев и загружает туда комментарий</documentation>
     </element>
-    <element xsi:type="archimate:BusinessRole" id="8e7e3bd6" name="Читатель"/>
-    <element xsi:type="archimate:BusinessRole" id="50707cb0" name="Автор"/>
+    <element xsi:type="archimate:BusinessRole" id="8e7e3bd6" name="Читатель">
+      <documentation>Читать могут все зарегистрированные и незарегистрированные пользователи.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" id="50707cb0" name="Автор">
+      <documentation>Автором могут быть преподаватели и студенты.</documentation>
+    </element>
     <element xsi:type="archimate:BusinessFunction" id="df4ee7a7" name="Добавление пользователя"/>
     <element xsi:type="archimate:BusinessFunction" id="7e0d512d" name="Редактирование данных пользователя"/>
     <element xsi:type="archimate:BusinessFunction" id="6ebb8ab9" name="Авторизация пользователя"/>
@@ -64,11 +75,19 @@
     <element xsi:type="archimate:BusinessFunction" id="f5de5726" name="Поиск по названию статьи"/>
     <element xsi:type="archimate:BusinessFunction" id="2d7a4b70" name="Поиск по ключевым словам"/>
     <element xsi:type="archimate:BusinessFunction" id="6ff96973" name="Поиск по автору"/>
-    <element xsi:type="archimate:BusinessRole" id="deeaf1d0" name="Комментатор"/>
-    <element xsi:type="archimate:BusinessRole" id="9cda9ec9" name="Спамер"/>
+    <element xsi:type="archimate:BusinessRole" id="deeaf1d0" name="Комментатор">
+      <documentation>Комментировать могут зарегистрированные и подтверждённые пользователи (например, преподаватели и студенты).</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" id="9cda9ec9" name="Спамер">
+      <documentation>Спамера следует забанить.</documentation>
+    </element>
     <element xsi:type="archimate:BusinessRole" id="4b186f07" name="Тролль"/>
-    <element xsi:type="archimate:BusinessRole" id="6b30cf95" name="Владелец авторских прав на материалы"/>
-    <element xsi:type="archimate:BusinessRole" id="4f71628b" name="Рекламщик"/>
+    <element xsi:type="archimate:BusinessRole" id="6b30cf95" name="Владелец авторских прав на материалы">
+      <documentation>Владелец авторских прав на материалы -- обычный пользователь, договоры о размещении рекламы и оплате не включены в функционал wiki.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" id="4f71628b" name="Рекламщик">
+      <documentation>Рекламщик обладает правами изменения оформления и содержания своего блока рекламы.</documentation>
+    </element>
   </folder>
   <folder name="Обработка данных" id="fe27d252" type="application">
     <element xsi:type="archimate:DataObject" id="541bf1d1" name="Пользователь">
@@ -134,11 +153,11 @@
     </element>
     <element xsi:type="archimate:Stakeholder" id="4253349b" name="Преподаватель">
       <documentation>Преподаватель -- тот, кто занимается преподаванием чего-либо (обычно в среднем специальном или высшем учебном заведении). Например, преподаватель физики.
-Может являться автором статьи, читателем, комментатором.</documentation>
+</documentation>
     </element>
     <element xsi:type="archimate:Stakeholder" id="f493dff3" name="Студент">
       <documentation>Человек, обучающийся в университете или институте. Пришел на wiki за знаниями или по принуждению преподавателя.
-Может являться автором статьи, читателем, комментатором.
+
 </documentation>
     </element>
     <element xsi:type="archimate:Stakeholder" id="22e942e0" name="Модератор контента">
@@ -629,6 +648,7 @@
       <child xsi:type="archimate:DiagramObject" id="bf3245cc" textAlignment="2" targetConnections="d642abdd" archimateElement="4814af54">
         <bounds x="362" y="1032" width="176" height="55"/>
       </child>
+      <documentation>Группа описаний содержит цели, которые преследуют стейкхолдеры. Цели прокомментированы и в некоторых случаях связаны между собой, а в некоторых -- противпоположны. Цели могут быть и должны быть различными у различных стейкхолдеров.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="e33262a7" name="1. Заинтересованные лица и системы">
       <child xsi:type="archimate:Group" id="250b6db2" name="Окружающая среда">
@@ -887,6 +907,7 @@
         <bounds x="648" y="636"/>
         <sourceConnection xsi:type="archimate:Connection" id="3f2c667b" source="e78436a3" target="e1d7601e" relationship="4e1013df"/>
       </child>
+      <documentation>Группа описаний содержит сложную схему сопоставления стейкхолдеров и соответствующих им ролей внутри системы. Кроме того, указаны некоторые взаимодействия между ролями внутри системы.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="94371520" name="5. Сценарии работы с системой">
       <child xsi:type="archimate:DiagramObject" id="c10c54ac" textAlignment="2" archimateElement="c1ab677c">
