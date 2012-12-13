@@ -126,50 +126,83 @@
     <element xsi:type="archimate:InfrastructureService" id="299b0240" name="Сервис бэкапов"/>
   </folder>
   <folder name="Целеполагание" id="8f5c2f19" type="motivation">
-    <element xsi:type="archimate:Goal" id="9ef7921f" name="Посетители wiki воспользовались рекламируемым продуктом(услугой) "/>
+    <element xsi:type="archimate:Goal" id="9ef7921f" name="Посетители wiki воспользовались рекламируемым продуктом(услугой) ">
+      <documentation>&quot;Раскрутка&quot; продукта важна для привлечения наибольшего количества пользователей, с целью дальнейшего извлечения выгоды (деньги)</documentation>
+    </element>
     <element xsi:type="archimate:Goal" id="79b866a4" name="Качественная система wiki">
       <documentation>Термин &quot;качественная система&quot; включает в себя качественную архитектуру, архитектурное описание, код модуля, интерфейс, отсутствие дефектов, сдачу в срок и стабильную работу. </documentation>
     </element>
     <element xsi:type="archimate:Stakeholder" id="4253349b" name="Преподаватель">
-      <documentation>Может являться автором статьи, читателем, комментатором.</documentation>
+      <documentation>Преподаватель -- тот, кто занимается преподаванием чего-либо (обычно в среднем специальном или высшем учебном заведении). Например, преподаватель физики.
+Может являться автором статьи, читателем, комментатором.</documentation>
     </element>
-    <element xsi:type="archimate:Stakeholder" id="f493dff3" name="Студент"/>
+    <element xsi:type="archimate:Stakeholder" id="f493dff3" name="Студент">
+      <documentation>Человек, обучающийся в университете или институте. Пришел на wiki за знаниями или по принуждению преподавателя.
+Может являться автором статьи, читателем, комментатором.
+</documentation>
+    </element>
     <element xsi:type="archimate:Stakeholder" id="22e942e0" name="Модератор контента">
       <documentation>Модератор контента следит за правильностью фактов в статьях, наличием ссылок, отсутствием орфографических и пунктуационных ошибок. Также он может принимать меры против спамеров и троллей.</documentation>
     </element>
-    <element xsi:type="archimate:Stakeholder" id="d0d1b745" name="Тестировщик "/>
-    <element xsi:type="archimate:Stakeholder" id="7aebcf1b" name="Front-end разработчик"/>
-    <element xsi:type="archimate:Stakeholder" id="df30f953" name="Кодер">
-      <documentation>Кодер создает исходный код модуля по заданной структуре</documentation>
+    <element xsi:type="archimate:Stakeholder" id="d0d1b745" name="Тестировщик ">
+      <documentation>Тестировщик проверяет, соответствует ли разработанный кодером код заданным требованиям.</documentation>
     </element>
-    <element xsi:type="archimate:Stakeholder" id="d8256ad6" name="Рекламщик"/>
-    <element xsi:type="archimate:Stakeholder" id="948911b2" name="Владелец авторских прав на материалы"/>
+    <element xsi:type="archimate:Stakeholder" id="7aebcf1b" name="Front-end разработчик">
+      <documentation>Front-end разработчик ответственен за последнюю часть проекта.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="df30f953" name="Кодер">
+      <documentation>Кодер создает исходный код модуля по заданной структуре.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="d8256ad6" name="Рекламщик">
+      <documentation>Рекламщик предлагает вознаграждение за размещение рекламы на wiki.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="948911b2" name="Владелец авторских прав на материалы">
+      <documentation>Владелец авторских прав на какие-либо материалы интересуется, не используюся ли эти материалы на wiki без соответствующих отчислений владельцу.</documentation>
+    </element>
     <element xsi:type="archimate:Stakeholder" id="53a993dc" name="Архитектор wiki">
       <documentation>Архитектор разрабатывает структурную схему, учитывая все связи и отношения внутри системы, создает архитектуру системы.</documentation>
     </element>
-    <element xsi:type="archimate:Stakeholder" id="3191f5e5" name="Менеджер"/>
-    <element xsi:type="archimate:Stakeholder" id="51232577" name="Спамер"/>
-    <element xsi:type="archimate:Stakeholder" id="635f8456" name="Тролль"/>
-    <element xsi:type="archimate:Goal" id="f273c28a" name="Качественная архитектура и архитектурное описание проекта"/>
-    <element xsi:type="archimate:Goal" id="1e9e561b" name="Система, разработанная качественно, в срок и с минимальными затратами ресурсов"/>
+    <element xsi:type="archimate:Stakeholder" id="3191f5e5" name="Менеджер">
+      <documentation>Менеджер следит за процессом разработки и старается извлечь максимум из возможностей всех занятых в обеспечивающей системе для пользы проекта.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="51232577" name="Спамер">
+      <documentation>Спамер захламляет все доступные ему поля для отправки различными ссылками и рекламными сообщениями без согласия администратора wiki. Спамер затрудняет доступ к полезной информации, и воздействие спамера на wiki нужно минимизировать.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" id="635f8456" name="Тролль">
+      <documentation>Тролль приходит just for lulz. Тролли бывают тонкими и толстыми. Оба типа троллей допустимы среди комментаторов wiki, но должны контролироваться модераторами.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" id="f273c28a" name="Качественная архитектура и архитектурное описание проекта">
+      <documentation>Качественная архитектура реализуется легко, если составлено качественное архитектурное описание проекта. Качественное архитектурное описание проекта должно содержать исчерпывающую информацию о модулях и отношениях между ними, но не должно быть избыточным.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" id="1e9e561b" name="Система, разработанная качественно, в срок и с минимальными затратами ресурсов">
+      <documentation>Экономия ресурсов (человековремя, деньги) важна как цель, достижение которой предполагает, что издержки на создание wiki не будут слишком велики по сравнению с полученным profit'ом.</documentation>
+    </element>
     <element xsi:type="archimate:Goal" id="463277f0" name="Качественный код модуля">
       <documentation>Код модуля должен быть работающим быстро и без ошибок, написанным в хорошем стиле программирования, легким для сопровождения.</documentation>
     </element>
     <element xsi:type="archimate:Goal" id="5d764ab3" name="Качественный интерфейс wiki">
       <documentation>Интерфейс должен быть дружелюбным, интуитивно понятным.</documentation>
     </element>
-    <element xsi:type="archimate:Goal" id="3c2a9c5e" name="Система прошла все тесты и не содержит дефектов"/>
-    <element xsi:type="archimate:Goal" id="5b0bde36" name="Деньги за использование информации в wiki "/>
+    <element xsi:type="archimate:Goal" id="3c2a9c5e" name="Система прошла все тесты и не содержит дефектов">
+      <documentation>Система, не прошедшая тесты, не должна быть допущена до конечного пользователя, потому что пользователь очень не любит непредсказуемое поведение системы. Отловленные баги нужно исправить и не наплодить новых.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" id="5b0bde36" name="Деньги за использование информации в wiki ">
+      <documentation>Владалец авторских прав не против поделиться интеллектуальной собственностью за вознаграждение.</documentation>
+    </element>
     <element xsi:type="archimate:Goal" id="62c43690" name="Работа системы нарушена">
       <documentation>Работа система может быть нарушена разными заинтересованными лицами разным образом. Так, спамер влияет больше на удобство пользования wiki, а тролль - на психологический климат внутри обсуждений в системе.</documentation>
     </element>
-    <element xsi:type="archimate:Goal" id="4f7aa934" name="Известна новая информация"/>
+    <element xsi:type="archimate:Goal" id="4f7aa934" name="Известна новая информация">
+      <documentation>Радость от приобретённых знаний сложно с чем-нибудь сравнить.
+Кроме того, информация бывает просто необходима.</documentation>
+    </element>
     <element xsi:type="archimate:Goal" id="8c95c04c" name="Полезная информация доступна для прочтения другими людьми"/>
     <element xsi:type="archimate:Goal" id="545f8906" name="Порядок в wiki">
       <documentation>Порядок в wiki - отсутствие спама и толстого троллинга, правильное проставление тем, наличие ссылок на материалы, отсутствие фактических и орфографических ошибок в статьях.</documentation>
     </element>
     <element xsi:type="archimate:Stakeholder" id="1a433bdc" name="Автор статьи">
-      <documentation>Авторами статей могут быть преподаватели.</documentation>
+      <documentation>Автор -- человек, пишущий, редактирующий и добавляющий статьи.
+Авторами статей могут быть преподаватели и студенты.</documentation>
     </element>
     <element xsi:type="archimate:Goal" id="83a2d4e1" name="Статья быстро и легко добавлена в систему"/>
     <element xsi:type="archimate:Constraint" id="1fa9d86a" name="Использование языка Java"/>
@@ -191,7 +224,8 @@
     </element>
     <element xsi:type="archimate:Principle" id="5056c170" name="Принцип открытого исходного кода"/>
     <element xsi:type="archimate:Stakeholder" id="d58c1c46" name="Читатель статьи">
-      <documentation>Читателями статей могут являться студенты.</documentation>
+      <documentation>Читатель -- человек, читающий (просматривающий) wiki.
+Читателями статей могут являться студенты, преподаватели и незарегистрированные пользователи.</documentation>
     </element>
     <element xsi:type="archimate:Goal" id="0239cd42" name="Статья легко найдена и прочитана, из нее получена необходимая информация"/>
     <element xsi:type="archimate:Goal" id="0ec37722" name="Нанесение вреда wiki, затруднение использования wiki"/>
@@ -200,7 +234,9 @@
     <element xsi:type="archimate:Goal" id="9299e686" name="Участники системы могут обсуждать информацию, содержащуюся в wiki, и редактировать ее"/>
     <element xsi:type="archimate:Goal" id="1ed379e6" name="Обсуждение заполнено оскорблениями или холиварами"/>
     <element xsi:type="archimate:Goal" id="18ae1ac5" name="Обсуждение заполнено спамом"/>
-    <element xsi:type="archimate:Goal" id="b03ed1d4" name="Негодующие и флеймящие пользователи"/>
+    <element xsi:type="archimate:Goal" id="b03ed1d4" name="Негодующие и флеймящие пользователи">
+      <documentation>Пользователи могут с удовольствием наблюдать за троллингом, пока этот троллинг не будет в особенно извращенной форме направлен против них.</documentation>
+    </element>
     <element xsi:type="archimate:Constraint" id="8e9f20d6" name="Использование фреймворка Felix"/>
     <element xsi:type="archimate:Constraint" id="98b3d312" name="Использование OSGI"/>
     <element xsi:type="archimate:Constraint" id="f83e7895" name="Интеграция в систему Sakai "/>
@@ -242,7 +278,9 @@
 Реакция: система должна успешно обработать данные&#xD;
 Численная мера реакции: за время &lt; 3с</documentation>
     </element>
-    <element xsi:type="archimate:Goal" id="59c55a56" name="Полезная информация захламлена бесполезной"/>
+    <element xsi:type="archimate:Goal" id="59c55a56" name="Полезная информация захламлена бесполезной">
+      <documentation>Сложно пользоваться системой с изрядным количеством сообщений, содержащих наряду с полезной информацией информацию, не относящуюся к теме, и ссылки на порноресурсы .</documentation>
+    </element>
     <element xsi:type="archimate:Goal" id="8df31e09" name="Сообщники найдены"/>
     <element xsi:type="archimate:Goal" id="ba3f03c2" name="Получены отзывы о статье"/>
     <element xsi:type="archimate:Goal" id="06c16ae9" name="Улучшение статьи после комментариев"/>
@@ -640,6 +678,11 @@
           <bounds x="732" y="222"/>
         </child>
       </child>
+      <documentation>В этой группе описаний представлены три степени &quot;близости&quot; различных стейкхолдеров к wiki: 
+система (студент, преподаватель, автор статьи, модератор контента, читатель статьи, комментатор);
+обеспечивающая система (Front-end разработчик, тестировщик, кодер, архитектор wiki, менеджер);
+окружающая среда (владелец авторских прав на материалы, рекламщик, спамер, тролль).
+Система содержит роли, которые относятся непосредственно к wiki. Обеспечивающая система помогает ролям системы работать с wiki. Окружающая среда влияет на роли, находящиеся внутри системы.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="4989bc2c" name="2. Люди и Заинтересованные лица" viewpoint="17">
       <child xsi:type="archimate:DiagramObject" id="8940f076" textAlignment="2" targetConnections="16a5aaec bbdb9997 444b6e66" archimateElement="3dfea55b">
@@ -737,6 +780,9 @@
         <sourceConnection xsi:type="archimate:Connection" id="72a57c21" source="fe14e80a" target="71c97b04" relationship="3a0a2e3f"/>
         <sourceConnection xsi:type="archimate:Connection" id="b3c2ce03" source="fe14e80a" target="2d4f911e" relationship="89a327aa"/>
       </child>
+      <documentation>Данная группа описаний содержит маппинг ролей из группы описаний &quot;заинтересованные лица и системы&quot; на реальных и воображаемых персонажей.
+Среди реальных указаны люди, чьё мнение учитывалось при составлении групп описаний.
+Воображаемые персонажи указаны для наглядности.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="8fd119e0" name="4. Границы системы и интерфейсы">
       <child xsi:type="archimate:Group" id="02dcf8f5" name="Информационная система">
@@ -1153,7 +1199,7 @@
         <child xsi:type="archimate:DiagramObject" id="16f92da2" textAlignment="2" archimateElement="30051239">
           <bounds x="24" y="72" width="493" height="241"/>
           <child xsi:type="archimate:DiagramObject" id="b8dda2de" textAlignment="2" archimateElement="86879273">
-            <bounds x="60" y="60" width="253" height="145"/>
+            <bounds x="48" y="60" width="253" height="145"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="773a76b4" textAlignment="2" archimateElement="bf23b5af">
             <bounds x="336" y="150"/>
