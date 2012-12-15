@@ -74,13 +74,27 @@
     <element xsi:type="archimate:BusinessFunction" id="df4ee7a7" name="Добавление пользователя"/>
     <element xsi:type="archimate:BusinessFunction" id="7e0d512d" name="Редактирование данных пользователя"/>
     <element xsi:type="archimate:BusinessFunction" id="6ebb8ab9" name="Авторизация пользователя"/>
-    <element xsi:type="archimate:BusinessFunction" id="0864256b" name="Добавление статьи"/>
-    <element xsi:type="archimate:BusinessFunction" id="8a3d4def" name="Редактирование статьи"/>
-    <element xsi:type="archimate:BusinessFunction" id="9ce6697b" name="Переход к ветке комментариев"/>
-    <element xsi:type="archimate:BusinessFunction" id="076b42a1" name="Добавление комментария"/>
-    <element xsi:type="archimate:BusinessFunction" id="f5de5726" name="Поиск по названию статьи"/>
-    <element xsi:type="archimate:BusinessFunction" id="2d7a4b70" name="Поиск по ключевым словам"/>
-    <element xsi:type="archimate:BusinessFunction" id="6ff96973" name="Поиск по автору"/>
+    <element xsi:type="archimate:BusinessFunction" id="0864256b" name="Добавление статьи">
+      <documentation>Создание статьи и сохранение её на сервере.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" id="8a3d4def" name="Редактирование статьи">
+      <documentation>Изменение содержания статьи с последующим его сохранением.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" id="9ce6697b" name="Переход к ветке комментариев">
+      <documentation>Переход к ветке комментариев необходим, так как не все комментарии загружаются сразу (экономия ресурсов сервера).</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" id="076b42a1" name="Добавление комментария">
+      <documentation>Отправка комментария и сохранение его на сервере.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" id="f5de5726" name="Поиск по названию статьи">
+      <documentation>Название статьи ищется среди статей.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" id="2d7a4b70" name="Поиск по ключевым словам">
+      <documentation>Ключевые слова ищутся в тексте статьи.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" id="6ff96973" name="Поиск по автору">
+      <documentation>Имя, фамилия, ник автора ищутся в списке авторов.</documentation>
+    </element>
     <element xsi:type="archimate:BusinessRole" id="deeaf1d0" name="Комментатор">
       <documentation>Комментировать могут зарегистрированные и подтверждённые пользователи (например, преподаватели и студенты).</documentation>
     </element>
@@ -117,24 +131,46 @@
     </element>
     <element xsi:type="archimate:ApplicationComponent" id="6893078b" name="Felix"/>
     <element xsi:type="archimate:ApplicationComponent" id="b103e5e0" name="Sakai OAE"/>
-    <element xsi:type="archimate:ApplicationComponent" id="cdab248e" name="Wiki"/>
-    <element xsi:type="archimate:ApplicationComponent" id="17364fac" name="Модуль пользователей wiki"/>
-    <element xsi:type="archimate:ApplicationComponent" id="9be68e71" name="Модуль статей"/>
-    <element xsi:type="archimate:ApplicationComponent" id="bcb74da0" name="Модуль комментариев"/>
-    <element xsi:type="archimate:ApplicationComponent" id="810e26d1" name="Модуль поиска"/>
+    <element xsi:type="archimate:ApplicationComponent" id="cdab248e" name="Wiki">
+      <documentation>Проект wiki.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" id="17364fac" name="Модуль пользователей wiki">
+      <documentation>Модуль пользователей wiki использует сервис кастомизации.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" id="9be68e71" name="Модуль статей">
+      <documentation>Модуль статей выполняет переход к ветке комментариев, редактирование статьи и добавление статьи.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" id="bcb74da0" name="Модуль комментариев">
+      <documentation>Модуль комментариев выполняет добавление комментария.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" id="810e26d1" name="Модуль поиска">
+      <documentation>Модуль поиска выполняет поиск по ключевым словам, поиск по автору и поиск по названию статьи.</documentation>
+    </element>
     <element xsi:type="archimate:DataObject" id="963784c4" name="Роль">
       <documentation>Роли: автор, читатель, комментатор, забаненный пользователь, неавторизованный пользователь.</documentation>
     </element>
     <element xsi:type="archimate:DataObject" id="cb6ff275" name="Права доступа">
       <documentation>У каждой роли есть свой собственный набор прав доступа.</documentation>
     </element>
-    <element xsi:type="archimate:ApplicationComponent" id="28ea17a9" name="Модуль пользователей"/>
-    <element xsi:type="archimate:ApplicationService" id="cff96d16" name="Сервис кастомизации"/>
-    <element xsi:type="archimate:ApplicationService" id="3f50da78" name="Сервис поиска"/>
-    <element xsi:type="archimate:ApplicationService" id="207340a1" name="Управление ЖЦ модулей"/>
-    <element xsi:type="archimate:ApplicationService" id="13dcecba" name="Управление ЖЦ сервисов"/>
-    <element xsi:type="archimate:ApplicationService" id="6771a30d" name="Сервис добавления и удаления"/>
-    <element xsi:type="archimate:ApplicationService" id="af0c85a5" name="Сервис комментариев"/>
+    <element xsi:type="archimate:ApplicationComponent" id="28ea17a9" name="Модуль пользователей Sakai"/>
+    <element xsi:type="archimate:ApplicationService" id="cff96d16" name="Сервис кастомизации">
+      <documentation>Сервис кастомизации реализуется модулем пользователей Sakai.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" id="3f50da78" name="Сервис поиска">
+      <documentation>Сервис поиска реализуется модулем поиска Sakai.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" id="207340a1" name="Управление ЖЦ модулей">
+      <documentation>Sakai управляет жизненным циклом модулей с помощью Felix.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" id="13dcecba" name="Управление ЖЦ сервисов">
+      <documentation>Sakai управляет жизненным циклом сервисов с помощью Felix.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" id="6771a30d" name="Сервис добавления и удаления">
+      <documentation>Сервис добавления и удаления реализуется модулем JCR.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" id="af0c85a5" name="Сервис комментариев">
+      <documentation>Сервис комментариев реализуется модулем комментариев Sakai.</documentation>
+    </element>
     <element xsi:type="archimate:DataObject" id="6c18b08c" name="История изменений статьи">
       <documentation>История изменений статьи нужна, чтобы в случае некорректных изменений можно было бы восстановить прежнюю верную версию.</documentation>
     </element>
@@ -144,7 +180,9 @@
     <element xsi:type="archimate:DataObject" id="aa4a752e" name="Дочерняя статья">
       <documentation>Дочерняя статья содержит ссылку на свою родительскую статью и ссылки на другие дочерние статьи этой родительской статьи.</documentation>
     </element>
-    <element xsi:type="archimate:ApplicationService" id="e42d498f" name="Поиск сервисов"/>
+    <element xsi:type="archimate:ApplicationService" id="e42d498f" name="Поиск сервисов">
+      <documentation>Sakai управляет поиском сервисов с помощью Felix.</documentation>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" id="1a833c2f" name="JCR"/>
     <element xsi:type="archimate:ApplicationComponent" id="9aa86716" name="Модуль комментариев"/>
     <element xsi:type="archimate:ApplicationComponent" id="152f80e8" name="Модуль поиска"/>
@@ -1149,7 +1187,7 @@
         <sourceConnection xsi:type="archimate:Connection" id="adf8a477" source="e25bba3d" target="b9914ad4" relationship="97123fc1"/>
         <sourceConnection xsi:type="archimate:Connection" id="20cb7805" source="e25bba3d" target="af188683" relationship="2d66d06f"/>
         <child xsi:type="archimate:DiagramObject" id="e702ed8c" textAlignment="2" targetConnections="f4f505e3" archimateElement="28ea17a9">
-          <bounds x="36" y="24"/>
+          <bounds x="36" y="24" width="133" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="83e54429" source="e702ed8c" target="569db639" relationship="d5724080"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="c3a00332" textAlignment="2" archimateElement="1a833c2f">
@@ -1171,7 +1209,7 @@
       <child xsi:type="archimate:DiagramObject" id="67d61e4a" textAlignment="2" archimateElement="cdab248e">
         <bounds x="12" y="60" width="721" height="169"/>
         <child xsi:type="archimate:DiagramObject" id="e56955a4" textAlignment="2" targetConnections="8b537164 993ee8da" archimateElement="17364fac">
-          <bounds x="48" y="72"/>
+          <bounds x="48" y="72" width="145" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="13ba24be" textAlignment="2" targetConnections="049d3ce9 32a9fa3e" archimateElement="9be68e71">
           <bounds x="167" y="12"/>
@@ -1240,6 +1278,7 @@
       <child xsi:type="archimate:DiagramObject" id="af188683" textAlignment="2" targetConnections="1f81993f 20cb7805" archimateElement="e42d498f">
         <bounds x="562" y="439"/>
       </child>
+      <documentation>Данная группа описаний содержит связи между модулями, сервисами и выполняемыми функциями. Сервисы и модули сгруппированы по их принадлежности фреймворку Felix, Sakai OAE и проекту Wiki.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="fa18ccaf" name="9. Развертывание">
       <child xsi:type="archimate:DiagramObject" id="87878029" textAlignment="2" archimateElement="93115f6d">
