@@ -16,7 +16,6 @@
     <element xsi:type="archimate:BusinessRole" id="2d8a7aa9" name="Преподаватель"/>
     <element xsi:type="archimate:BusinessRole" id="41633b8e" name="Куратор"/>
     <element xsi:type="archimate:BusinessRole" id="282f707b" name="Деканат"/>
-    <element xsi:type="archimate:BusinessRole" id="9eec03ea" name="Родитель студента"/>
     <element xsi:type="archimate:BusinessFunction" id="3a31a30c" name="Добавление информации о посещениях текущего занятия">
       <documentation>ПРЕПОДАВАТЕЛЬ: нажимает кнопку &quot;Ввести посещаемость текущего занятия&quot;&#xD;
 СИСТЕМА: открывает окно ввода посещаемости&#xD;
@@ -192,7 +191,6 @@
       <documentation>Оценка успеваемости на смотрах, представление к выговорах м и благодарностям</documentation>
     </element>
     <element xsi:type="archimate:FlowRelationship" id="bcc708e6" name="Отчисление, выговор, благодарность" source="282f707b" target="cc9333a2"/>
-    <element xsi:type="archimate:FlowRelationship" id="6726d899" name="Мотивация студента" source="9eec03ea" target="cc9333a2"/>
     <element xsi:type="archimate:AssociationRelationship" id="25b68ee5" source="e7b2d9e0" target="9e123c67"/>
     <element xsi:type="archimate:AssociationRelationship" id="5ab3c46f" source="389df00e" target="5de6e1eb"/>
     <element xsi:type="archimate:AssociationRelationship" id="52f09d58" source="54a3aa17" target="ddbada23"/>
@@ -228,12 +226,10 @@
     <element xsi:type="archimate:CompositionRelationship" id="cd94f219" source="b0c9aaf3" target="ecab28bb"/>
     <element xsi:type="archimate:FlowRelationship" id="de9af95c" name="Передача статистики посещаемости" source="2d8a7aa9" target="41633b8e"/>
     <element xsi:type="archimate:FlowRelationship" id="4486ee99" name="Передача статистики посещаемости" source="2d8a7aa9" target="282f707b"/>
-    <element xsi:type="archimate:FlowRelationship" id="eee69f63" name="Передача статистики посещаемости" source="2d8a7aa9" target="9eec03ea"/>
     <element xsi:type="archimate:AssociationRelationship" id="0ebf940d" source="54a3aa17" target="282f707b"/>
     <element xsi:type="archimate:AssociationRelationship" id="36da81b3" source="8e22aacb" target="cc9333a2"/>
     <element xsi:type="archimate:AssociationRelationship" id="8c7c74e6" source="5d32476f" target="2d8a7aa9"/>
     <element xsi:type="archimate:AssociationRelationship" id="11f73aa3" source="9e123c67" target="41633b8e"/>
-    <element xsi:type="archimate:AssociationRelationship" id="efd5605a" source="874f24b0" target="9eec03ea"/>
     <element xsi:type="archimate:RealisationRelationship" id="48af709c" source="23e1617f" target="e77919dd"/>
     <element xsi:type="archimate:AssociationRelationship" id="8844e02c" source="9e123c67" target="e77919dd"/>
     <element xsi:type="archimate:CompositionRelationship" id="5d896b98" source="10401b2e" target="e77919dd"/>
