@@ -102,10 +102,19 @@
     <element xsi:type="archimate:DataObject" id="3d381ad0" name="Учетные данные">
       <documentation>Учетные данные включают в себя логин, пароль, адрес электронной почты и другую личную информацию.</documentation>
     </element>
-    <element xsi:type="archimate:DataObject" id="1f3c0e64" name="Статьи"/>
-    <element xsi:type="archimate:DataObject" id="104bb2fb" name="Комментарии"/>
-    <element xsi:type="archimate:DataObject" id="df5eb432" name="Текст статьи"/>
-    <element xsi:type="archimate:DataObject" id="ca8f9f32" name="Текст комментария"/>
+    <element xsi:type="archimate:DataObject" id="1f3c0e64" name="Статьи">
+      <documentation>Статьи содержат полезную информацию на объявленную тему и ссылки на другие статьи. Статьи должны быть хорошо структурированы внутри.
+Статьи могут образовывать иерархию (дочерняя статья, родительская статья).</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" id="104bb2fb" name="Комментарии">
+      <documentation>Комментарий содержит текст комментария.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" id="df5eb432" name="Текст статьи">
+      <documentation>Текст статьи хорошо отформатирован и не содержит ошибок.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" id="ca8f9f32" name="Текст комментария">
+      <documentation>Текст комментария образует комментарий.</documentation>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" id="6893078b" name="Felix"/>
     <element xsi:type="archimate:ApplicationComponent" id="b103e5e0" name="Sakai OAE"/>
     <element xsi:type="archimate:ApplicationComponent" id="cdab248e" name="Wiki"/>
@@ -116,7 +125,9 @@
     <element xsi:type="archimate:DataObject" id="963784c4" name="Роль">
       <documentation>Роли: автор, читатель, комментатор, забаненный пользователь, неавторизованный пользователь.</documentation>
     </element>
-    <element xsi:type="archimate:DataObject" id="cb6ff275" name="Права доступа"/>
+    <element xsi:type="archimate:DataObject" id="cb6ff275" name="Права доступа">
+      <documentation>У каждой роли есть свой собственный набор прав доступа.</documentation>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" id="28ea17a9" name="Модуль пользователей"/>
     <element xsi:type="archimate:ApplicationService" id="cff96d16" name="Сервис кастомизации"/>
     <element xsi:type="archimate:ApplicationService" id="3f50da78" name="Сервис поиска"/>
@@ -124,9 +135,15 @@
     <element xsi:type="archimate:ApplicationService" id="13dcecba" name="Управление ЖЦ сервисов"/>
     <element xsi:type="archimate:ApplicationService" id="6771a30d" name="Сервис добавления и удаления"/>
     <element xsi:type="archimate:ApplicationService" id="af0c85a5" name="Сервис комментариев"/>
-    <element xsi:type="archimate:DataObject" id="6c18b08c" name="История изменений статьи"/>
-    <element xsi:type="archimate:DataObject" id="76dfa6c9" name="Родительская статья"/>
-    <element xsi:type="archimate:DataObject" id="aa4a752e" name="Дочерняя статья"/>
+    <element xsi:type="archimate:DataObject" id="6c18b08c" name="История изменений статьи">
+      <documentation>История изменений статьи нужна, чтобы в случае некорректных изменений можно было бы восстановить прежнюю верную версию.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" id="76dfa6c9" name="Родительская статья">
+      <documentation>Родительская статья содержит в себе ссылки на дочернии статьи.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" id="aa4a752e" name="Дочерняя статья">
+      <documentation>Дочерняя статья содержит ссылку на свою родительскую статью и ссылки на другие дочерние статьи этой родительской статьи.</documentation>
+    </element>
     <element xsi:type="archimate:ApplicationService" id="e42d498f" name="Поиск сервисов"/>
     <element xsi:type="archimate:ApplicationComponent" id="1a833c2f" name="JCR"/>
     <element xsi:type="archimate:ApplicationComponent" id="9aa86716" name="Модуль комментариев"/>
@@ -226,7 +243,9 @@
     <element xsi:type="archimate:Goal" id="83a2d4e1" name="Статья быстро и легко добавлена в систему">
       <documentation>Система стабильна и быстро отвечает на запросы. При добавлении статьи в систему не требуется несколько раз переотправлять статью.</documentation>
     </element>
-    <element xsi:type="archimate:Constraint" id="1fa9d86a" name="Использование языка Java"/>
+    <element xsi:type="archimate:Constraint" id="1fa9d86a" name="Использование языка Java">
+      <documentation>Язык Java предлагает современный подход к ООП, безопасный по отношению к памяти код (благодаря Java Virtual Machine) и поддерживает технологию модульности OSGI.</documentation>
+    </element>
     <element xsi:type="archimate:Assessment" id="bf42bb03" name="1000 пользователей за 1с добавляют 10 страниц с равномерным распределением">
       <documentation>Источник воздействия: пользователь&#xD;
 Воздействие: добавление новой страницы&#xD;
@@ -243,7 +262,9 @@
 Реакция: разработчик должен вносить изменения, не лишая систему работоспособности, система должна успешно обрабатывать все запросы пользователей&#xD;
 Численная мера реакции: за время &lt; 3с</documentation>
     </element>
-    <element xsi:type="archimate:Principle" id="5056c170" name="Принцип открытого исходного кода"/>
+    <element xsi:type="archimate:Principle" id="5056c170" name="Принцип открытого исходного кода">
+      <documentation>Принцип открытого исходного кода позволит привлечь к разработке и отладке большее число людей, поскольку любой человек, зарегистрированный на репозитории wiki, сможет внести свой вклад.</documentation>
+    </element>
     <element xsi:type="archimate:Stakeholder" id="d58c1c46" name="Читатель статьи">
       <documentation>Читатель -- человек, читающий (просматривающий) wiki.
 Читателями статей могут являться студенты, преподаватели и незарегистрированные пользователи.</documentation>
@@ -272,9 +293,13 @@
     <element xsi:type="archimate:Goal" id="b03ed1d4" name="Негодующие и флеймящие пользователи">
       <documentation>Пользователи могут с удовольствием наблюдать за троллингом, пока этот троллинг не будет в особенно извращенной форме направлен против них.</documentation>
     </element>
-    <element xsi:type="archimate:Constraint" id="8e9f20d6" name="Использование фреймворка Felix"/>
+    <element xsi:type="archimate:Constraint" id="8e9f20d6" name="Использование фреймворка Felix">
+      <documentation>Felix -- один из лучших фреймворков, реализующих стандарт OSGI.</documentation>
+    </element>
     <element xsi:type="archimate:Constraint" id="98b3d312" name="Использование OSGI"/>
-    <element xsi:type="archimate:Constraint" id="f83e7895" name="Интеграция в систему Sakai "/>
+    <element xsi:type="archimate:Constraint" id="f83e7895" name="Интеграция в систему Sakai ">
+      <documentation>Модуль wiki не является самостоятельным, он будет интегрирован с системой Sakai.</documentation>
+    </element>
     <element xsi:type="archimate:Goal" id="d159ba7f" name="Участие в обсуждении статьи, ее улучшении, извлечении полезной информации">
       <documentation>Пользователи системы хотят не только получать информацию, но и обмениваться мнениями с другими участниками, а также выражать свое мнение о содержании статьи.</documentation>
     </element>
@@ -1061,10 +1086,11 @@
       <child xsi:type="archimate:DiagramObject" id="25cb618d" textAlignment="2" archimateElement="50df412b">
         <bounds x="221" y="192" width="200" height="55"/>
       </child>
+      <documentation>Группа описаний содержит ограничения, наложенные на конечный продукт, и показатели качества, которым он должен удовлетворять.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="cc299e8e" name="7. Логическая модель данных" viewpoint="3">
       <child xsi:type="archimate:DiagramObject" id="b0734faa" textAlignment="2" archimateElement="541bf1d1">
-        <bounds x="288" y="48"/>
+        <bounds x="288" y="48" width="133" height="61"/>
         <sourceConnection xsi:type="archimate:Connection" id="41d57e8f" source="b0734faa" target="434e715b" relationship="efa58a9e"/>
         <sourceConnection xsi:type="archimate:Connection" id="0817854f" source="b0734faa" target="04a0dfad" relationship="3054fad1"/>
         <sourceConnection xsi:type="archimate:Connection" id="5cd517c8" source="b0734faa" target="93296d54" relationship="1a9e698a"/>
@@ -1108,6 +1134,7 @@
         <sourceConnection xsi:type="archimate:Connection" id="77742c1a" source="d021686e" target="52ad1f62" relationship="f3d1eb3d"/>
         <sourceConnection xsi:type="archimate:Connection" id="cdd521a0" source="d021686e" target="04a0dfad" relationship="5d85d06b"/>
       </child>
+      <documentation>Логическая модель данных содержит иерархию данных для системы wiki. Описаны отношения композиции и специализации.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="9e913e60" name="8. Компоненты и сервисы" viewpoint="16">
       <child xsi:type="archimate:DiagramObject" id="8f03242b" textAlignment="2" archimateElement="6893078b">
