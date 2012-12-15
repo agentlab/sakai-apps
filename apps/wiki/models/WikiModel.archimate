@@ -129,10 +129,14 @@
     <element xsi:type="archimate:DataObject" id="ca8f9f32" name="Текст комментария">
       <documentation>Текст комментария образует комментарий.</documentation>
     </element>
-    <element xsi:type="archimate:ApplicationComponent" id="6893078b" name="Felix"/>
-    <element xsi:type="archimate:ApplicationComponent" id="b103e5e0" name="Sakai OAE"/>
+    <element xsi:type="archimate:ApplicationComponent" id="6893078b" name="Felix">
+      <documentation>Фреймворк Felix лежит в основе модульной структуры Sakai.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" id="b103e5e0" name="Sakai OAE">
+      <documentation>Sakai open academic environment -- система для академического сотрудничества.</documentation>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" id="cdab248e" name="Wiki">
-      <documentation>Проект wiki.</documentation>
+      <documentation>Проект wiki. Реализован в виде плагина к Sakai.</documentation>
     </element>
     <element xsi:type="archimate:ApplicationComponent" id="17364fac" name="Модуль пользователей wiki">
       <documentation>Модуль пользователей wiki использует сервис кастомизации.</documentation>
@@ -152,7 +156,10 @@
     <element xsi:type="archimate:DataObject" id="cb6ff275" name="Права доступа">
       <documentation>У каждой роли есть свой собственный набор прав доступа.</documentation>
     </element>
-    <element xsi:type="archimate:ApplicationComponent" id="28ea17a9" name="Модуль пользователей Sakai"/>
+    <element xsi:type="archimate:ApplicationComponent" id="28ea17a9" name="Модуль пользователей Sakai">
+      <documentation>Модуль пользователей Sakai необходим реализует сервис кастомизации.
+</documentation>
+    </element>
     <element xsi:type="archimate:ApplicationService" id="cff96d16" name="Сервис кастомизации">
       <documentation>Сервис кастомизации реализуется модулем пользователей Sakai.</documentation>
     </element>
@@ -183,19 +190,43 @@
     <element xsi:type="archimate:ApplicationService" id="e42d498f" name="Поиск сервисов">
       <documentation>Sakai управляет поиском сервисов с помощью Felix.</documentation>
     </element>
-    <element xsi:type="archimate:ApplicationComponent" id="1a833c2f" name="JCR"/>
-    <element xsi:type="archimate:ApplicationComponent" id="9aa86716" name="Модуль комментариев"/>
-    <element xsi:type="archimate:ApplicationComponent" id="152f80e8" name="Модуль поиска"/>
+    <element xsi:type="archimate:ApplicationComponent" id="1a833c2f" name="JCR">
+      <documentation>Модуль JCR работает с данными и реализует сервис добавления и удаления.
+</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" id="9aa86716" name="Модуль комментариев">
+      <documentation>Модуль комментариев реализует сервис комментариев.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" id="152f80e8" name="Модуль поиска">
+      <documentation>Модуль поиска реализует сервис поиска.</documentation>
+    </element>
   </folder>
   <folder name="Оборудование" id="d3a95c37" type="technology">
-    <element xsi:type="archimate:Device" id="93115f6d" name="Компьютер (сервер)"/>
-    <element xsi:type="archimate:SystemSoftware" id="30051239" name="Операционная система"/>
-    <element xsi:type="archimate:SystemSoftware" id="86879273" name="Java VM"/>
-    <element xsi:type="archimate:Artifact" id="25a7ca5b" name="felix.jar"/>
-    <element xsi:type="archimate:Artifact" id="32f6d410" name="Набор плагинов"/>
-    <element xsi:type="archimate:Artifact" id="34b03440" name="Плагин"/>
-    <element xsi:type="archimate:SystemSoftware" id="bf23b5af" name="СУБД"/>
-    <element xsi:type="archimate:InfrastructureService" id="aa38d1df" name="Работа с данными"/>
+    <element xsi:type="archimate:Device" id="93115f6d" name="Компьютер (сервер)">
+      <documentation>Всё должно выполняться на компьютере.</documentation>
+    </element>
+    <element xsi:type="archimate:SystemSoftware" id="30051239" name="Операционная система">
+      <documentation>Операционная система необходима для взаимодействия системного софта с компьютером.
+</documentation>
+    </element>
+    <element xsi:type="archimate:SystemSoftware" id="86879273" name="Java VM">
+      <documentation>Виртуальная машина Java необходима для запуска фреймворка Felix.</documentation>
+    </element>
+    <element xsi:type="archimate:Artifact" id="25a7ca5b" name="felix.jar">
+      <documentation>felix.jar -- готовый байткод для виртуальной машины Java проекта wiki.</documentation>
+    </element>
+    <element xsi:type="archimate:Artifact" id="32f6d410" name="Набор плагинов">
+      <documentation>Плагин -- единица модульности Sakai.</documentation>
+    </element>
+    <element xsi:type="archimate:Artifact" id="34b03440" name="Плагин">
+      <documentation>Плагин -- единица модульности Sakai.</documentation>
+    </element>
+    <element xsi:type="archimate:SystemSoftware" id="bf23b5af" name="СУБД">
+      <documentation>СУБД необходима для быстрого сохранения, поиска и доступа к информации.</documentation>
+    </element>
+    <element xsi:type="archimate:InfrastructureService" id="aa38d1df" name="Работа с данными">
+      <documentation>Работа с данными -- основное, что требуется.</documentation>
+    </element>
   </folder>
   <folder name="Целеполагание" id="8f5c2f19" type="motivation">
     <element xsi:type="archimate:Goal" id="9ef7921f" name="Посетители wiki воспользовались рекламируемым продуктом(услугой) ">
@@ -1322,6 +1353,7 @@
       <child xsi:type="archimate:DiagramObject" id="149b1142" textAlignment="2" targetConnections="76efef7e" archimateElement="6893078b">
         <bounds x="48" y="-132" width="253" height="133"/>
       </child>
+      <documentation>Эта группа описаний показывает, как будет развёрнута система по отношению к опера</documentation>
     </element>
   </folder>
 </archimate:model>
