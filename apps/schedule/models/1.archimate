@@ -678,6 +678,7 @@
     <element xsi:type="archimate:SpecialisationRelationship" id="33e8caaf" source="4d1cf4c9" target="71bfda44"/>
     <element xsi:type="archimate:AssociationRelationship" id="a879e384" source="b378d3f5" target="6bfc3654"/>
     <element xsi:type="archimate:AssociationRelationship" id="46b33d2b" source="dc62f0f8" target="18b316ae"/>
+    <element xsi:type="archimate:AssociationRelationship" id="5b66b576" source="2df0a028" target="f5ce5d65"/>
   </folder>
   <folder name="Группы описаний" id="fe64d650" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" id="e158e13a" name="3. Заинтересованные лица и их цели" viewpoint="17">
@@ -1035,7 +1036,7 @@
         <child xsi:type="archimate:DiagramObject" id="bf98d3c1" textAlignment="2" targetConnections="8c2964b9" archimateElement="9c66cc0f">
           <bounds x="648" y="258"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="ec2290ac" textAlignment="2" archimateElement="f5ce5d65">
+        <child xsi:type="archimate:DiagramObject" id="ec2290ac" textAlignment="2" targetConnections="829b4059" archimateElement="f5ce5d65">
           <bounds x="19" y="270" width="133" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="f5f1f516" source="ec2290ac" target="460fc6e3" relationship="828b0159"/>
           <sourceConnection xsi:type="archimate:Connection" id="41aafbac" source="ec2290ac" target="95a3ff50" relationship="6b892574"/>
@@ -1043,6 +1044,7 @@
         </child>
         <child xsi:type="archimate:DiagramObject" id="f3f5e56d" textAlignment="2" archimateElement="2df0a028">
           <bounds x="317" y="216" width="133" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="829b4059" source="f3f5e56d" target="ec2290ac" relationship="5b66b576"/>
         </child>
       </child>
     </element>
