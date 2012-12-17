@@ -12,7 +12,7 @@
     <element xsi:type="archimate:BusinessRole" id="0db570c9" name="Студент"/>
     <element xsi:type="archimate:BusinessRole" id="482c1c22" name="Гость"/>
     <element xsi:type="archimate:BusinessFunction" id="91a11168" name="Открытие сайта"/>
-    <element xsi:type="archimate:BusinessFunction" id="447159de" name="Просмотр профиля"/>
+    <element xsi:type="archimate:BusinessFunction" id="447159de" name="Просмотр профилей пользователей"/>
     <element xsi:type="archimate:BusinessFunction" id="a7db32ca" name="Авторизация на портале"/>
     <element xsi:type="archimate:BusinessProcess" id="8d662735" name="Процесс работы"/>
   </folder>
