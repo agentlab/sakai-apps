@@ -969,6 +969,7 @@
       <child xsi:type="archimate:DiagramObject" id="f9b372b9" textAlignment="2" targetConnections="8da2ec3d" archimateElement="18600826">
         <bounds x="48" y="107"/>
       </child>
+      <documentation>На этой диаграмме мы рассматриваем всевозможные, существенные в данной системе, цели заинтересованных лиц</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="b20ef40e" name="1. Заинтересованные лица и системы">
       <child xsi:type="archimate:Group" id="92b6f101" name="Окружающая среда">
@@ -1016,6 +1017,7 @@
           <bounds x="192" y="246"/>
         </child>
       </child>
+      <documentation>На этой диаграмме мы выявляем заинтересованных в данной системе лиц</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="476951b8" name="1. Люди и заинтересованные лица">
       <child xsi:type="archimate:DiagramObject" id="f158fc83" textAlignment="2" archimateElement="c52c064b">
@@ -1081,6 +1083,7 @@
       <child xsi:type="archimate:DiagramObject" id="c84a5f57" textAlignment="2" targetConnections="cfa74370 6253f989 ac6ebc15 49b76265" archimateElement="3f12695a">
         <bounds x="600" y="612"/>
       </child>
+      <documentation>На этой диаграмме мы конкретизируем заинтересованных лиц - кем может являться отдельно взятый человек</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="fa49fde4" name="3. Границы системы и Интерфейсы">
       <child xsi:type="archimate:Group" id="9e83dedc" name="Система Форум">
@@ -1146,6 +1149,7 @@
         <bounds x="900" y="252"/>
         <sourceConnection xsi:type="archimate:Connection" id="69bf7ec2" source="01b65c4f" target="bf98d3c1" relationship="3a0b02f0"/>
       </child>
+      <documentation>На этой диаграмме мы рассматриваем всевозможные, существенные в данной системе, цели заинтересованных лиц</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="26722a4d" name="5. Ограничения и показатели Качества">
       <child xsi:type="archimate:DiagramObject" id="c37835fd" textAlignment="2" archimateElement="6048ddf1">
@@ -1181,6 +1185,7 @@
       <child xsi:type="archimate:DiagramObject" id="2aee2ca3" textAlignment="2" archimateElement="bf27630f">
         <bounds x="519" y="118" width="154" height="94"/>
       </child>
+      <documentation>Здесь рассмотрены основные требования к системе и причины данных требований</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="a6141105" name="4. Сценарии">
       <child xsi:type="archimate:DiagramObject" id="d75c90b6" textAlignment="2" archimateElement="92725b91">
@@ -1458,6 +1463,7 @@
         <sourceConnection xsi:type="archimate:Connection" id="d01e11e4" source="9d319b6a" target="16f1c0e9" relationship="6bba83b0"/>
         <sourceConnection xsi:type="archimate:Connection" id="9ad544e6" source="9d319b6a" target="807a3483" relationship="23c029e7"/>
       </child>
+      <documentation>Рассмотрены требования к системе и их причины</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="358f7402" name="6. Логическая модель данных">
       <child xsi:type="archimate:DiagramObject" id="93db2da3" textAlignment="2" archimateElement="6ff41738">
@@ -1526,6 +1532,8 @@
           <sourceConnection xsi:type="archimate:Connection" id="1e5bf931" source="9d301bef" target="e9ffb5a3" relationship="dacdec15"/>
         </child>
       </child>
+      <documentation>На данной диаграмме рассмотрена логика передачи данных в системе.&#xD;
+Здесь показано, как &quot;поверх&quot; Sakai OAE  будут реализованы способы передачи данных</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="915771ac" name="8. Развертывание компонентов на оборудовании">
       <child xsi:type="archimate:DiagramObject" id="6db263d8" textAlignment="2" targetConnections="15713b06" archimateElement="bf9f0310">
@@ -1572,6 +1580,7 @@
       <child xsi:type="archimate:DiagramObject" id="e4c03f19" textAlignment="2" targetConnections="1b83892c" archimateElement="f21d63d8">
         <bounds x="216" y="-12" width="416" height="102"/>
       </child>
+      <documentation>Конкретная реализация разработанной системы с применением оборудования</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="e504cd7e" name="7. Компоненты и сервисы">
       <child xsi:type="archimate:DiagramObject" id="accbc1f3" textAlignment="2" archimateElement="368d4ae8">
