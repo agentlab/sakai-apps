@@ -1149,7 +1149,7 @@
         <bounds x="900" y="252"/>
         <sourceConnection xsi:type="archimate:Connection" id="69bf7ec2" source="01b65c4f" target="bf98d3c1" relationship="3a0b02f0"/>
       </child>
-      <documentation>На этой диаграмме мы рассматриваем всевозможные, существенные в данной системе, цели заинтересованных лиц</documentation>
+      <documentation>На этой диаграмме мы определяем границы, в пределах которых располагаются элементы системы, и предовставляемые системой интерфейсы</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" id="26722a4d" name="5. Ограничения и показатели Качества">
       <child xsi:type="archimate:DiagramObject" id="c37835fd" textAlignment="2" archimateElement="6048ddf1">
